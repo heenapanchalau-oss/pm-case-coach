@@ -1,0 +1,381 @@
+{
+  "id": "taploop-engagement",
+  "company": "TapLoop",
+  "type": "Engagement",
+  "area": "Digital wallets and loyalty",
+  "title": "Wallet activated, but rarely used to pay",
+  "disclaimer": "Practice scenario. The company is fictional and every figure is hypothetical. Australian market context is general.",
+  "company_context": "TapLoop (fictional) is an Australian digital wallet that combines saved cards and loyalty points for a network of retail partners, with in-store QR and online checkout.",
+  "sources": [],
+  "brief": {
+    "problem": "Customers activate the TapLoop wallet, but fewer of them use it to pay.",
+    "objective": "Lift monthly active payers from 18% to 30% of activated users within six months.",
+    "baseline": [
+      "Activated users: 220,000.",
+      "Monthly active payers: 18% of activated users, down from 26% a year ago."
+    ]
+  },
+  "facts": [
+    {
+      "id": "T1",
+      "phase": "frame",
+      "topic": "Financial impact",
+      "essential": true,
+      "keywords": [
+        "financial impact",
+        "revenue",
+        "cost",
+        "costing",
+        "money",
+        "fee",
+        "fees",
+        "dollar",
+        "worth",
+        "impact",
+        "transaction",
+        "transactions"
+      ],
+      "answer": "TapLoop earns about $0.45 per wallet payment from partner fees, and active payers make about 6 payments a month. The 8-point drop is about 17,600 fewer payers — roughly $47k a month, or about $570k a year.",
+      "coach_tip": "Size it, then add the strategic risk: partners judge us on usage.",
+      "model_question": "What's the revenue impact of fewer active payers?"
+    },
+    {
+      "id": "T2",
+      "phase": "frame",
+      "topic": "Metric definition",
+      "essential": true,
+      "keywords": [
+        "define",
+        "definition",
+        "defined",
+        "measured",
+        "measure",
+        "metric",
+        "calculate",
+        "count",
+        "counts",
+        "means",
+        "active",
+        "active payer"
+      ],
+      "answer": "A monthly active payer makes at least one successful wallet payment in a calendar month. Opening the app without paying doesn't count.",
+      "coach_tip": "This tells you the problem is paying, not opening the app.",
+      "model_question": "How is a monthly active payer defined?"
+    },
+    {
+      "id": "T3",
+      "phase": "find",
+      "topic": "Segments by channel",
+      "essential": true,
+      "keywords": [
+        "segment",
+        "segments",
+        "breakdown",
+        "split",
+        "which customers",
+        "who is",
+        "who",
+        "group",
+        "groups",
+        "in-store",
+        "instore",
+        "online",
+        "channel",
+        "channels",
+        "store"
+      ],
+      "answer": "In-store QR payers fell from 20% to 11% of activated users. Online checkout payers held steady at about 7%. Some customers use both.",
+      "coach_tip": "The drop is in-store — focus there.",
+      "model_question": "Is the drop in-store, online or both?"
+    },
+    {
+      "id": "T4",
+      "phase": "find",
+      "topic": "Behaviour",
+      "essential": true,
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "doing",
+        "differently",
+        "do differently",
+        "open",
+        "opens",
+        "usage",
+        "use",
+        "using",
+        "points",
+        "attempts"
+      ],
+      "answer": "App opens are steady at about 9 a month per user, mostly to check points. 63% of in-store payment attempts that start don't complete.",
+      "coach_tip": "Customers are trying to pay and failing — that's not low interest.",
+      "model_question": "What are customers actually doing in the app?"
+    },
+    {
+      "id": "T5",
+      "phase": "find",
+      "topic": "In-store payment funnel",
+      "essential": true,
+      "keywords": [
+        "funnel",
+        "journey",
+        "steps",
+        "step",
+        "conversion",
+        "drop",
+        "drop-off",
+        "dropoff",
+        "flow",
+        "stages",
+        "process",
+        "till",
+        "qr",
+        "checkout"
+      ],
+      "answer": "Last month in-store: open app at till 100% → QR shown 86% → scanned by terminal 71% → payment authorised 46% (was 78%) → receipt and points 45%.",
+      "coach_tip": "The biggest drop is authorisation: 78% to 46%.",
+      "model_question": "Can I see the in-store payment funnel, step by step?"
+    },
+    {
+      "id": "T6",
+      "phase": "find",
+      "topic": "Devices",
+      "essential": false,
+      "keywords": [
+        "device",
+        "devices",
+        "android",
+        "ios",
+        "iphone",
+        "platform",
+        "phone"
+      ],
+      "answer": "Android users' authorisation rate is 39%; iOS is 58%.",
+      "coach_tip": "Both are well below the old 78%, so it's not just one platform.",
+      "model_question": "Does the drop differ between Android and iOS?"
+    },
+    {
+      "id": "T7",
+      "phase": "prove",
+      "topic": "What changed",
+      "essential": true,
+      "keywords": [
+        "change",
+        "changed",
+        "changes",
+        "release",
+        "released",
+        "new",
+        "launch",
+        "launched",
+        "recently",
+        "introduced",
+        "authentication",
+        "security"
+      ],
+      "answer": "Five months ago an app release added step-up authentication: a biometric check plus a one-time SMS code for every in-store payment, after a fraud review.",
+      "coach_tip": "Connect this to the authorisation drop.",
+      "model_question": "Did anything change in the payment flow or security?"
+    },
+    {
+      "id": "T8",
+      "phase": "prove",
+      "topic": "Customer feedback",
+      "essential": true,
+      "keywords": [
+        "complaint",
+        "complaints",
+        "feedback",
+        "saying",
+        "say",
+        "nps",
+        "csat",
+        "tickets",
+        "reviews",
+        "survey",
+        "voice",
+        "rating",
+        "app store"
+      ],
+      "answer": "App rating fell from 4.6 to 3.8. Reviews and calls: too many steps at the till 47%, SMS code arrives late 29%, QR won't scan 14%. Store staff report queues backing up.",
+      "coach_tip": "Two themes cover 76% — both point to the extra step.",
+      "model_question": "What are customers and store staff saying?"
+    },
+    {
+      "id": "T9",
+      "phase": "prove",
+      "topic": "Fraud context",
+      "essential": false,
+      "keywords": [
+        "fraud",
+        "risk",
+        "losses",
+        "takeover",
+        "why was"
+      ],
+      "answer": "Fraud losses were 0.04% of payment value before the change and 0.03% after. Most fraud came from new devices in their first 7 days.",
+      "coach_tip": "This is your key to a targeted fix — and your guardrail.",
+      "model_question": "What fraud problem was the change solving?"
+    },
+    {
+      "id": "T10",
+      "phase": "prove",
+      "topic": "Loyalty and promotions",
+      "essential": false,
+      "keywords": [
+        "loyalty",
+        "promotion",
+        "promo",
+        "offer",
+        "partner",
+        "rewards"
+      ],
+      "answer": "Points rates haven't changed. A partner promotion ended last quarter, but active payers were already falling before it ended.",
+      "coach_tip": "Good to rule out — the timing doesn't fit.",
+      "model_question": "Did any loyalty or partner offers change?"
+    },
+    {
+      "id": "T11",
+      "phase": "pick",
+      "topic": "Constraints and estimates",
+      "essential": false,
+      "keywords": [
+        "estimate",
+        "estimates",
+        "engineering",
+        "constraint",
+        "constraints",
+        "build",
+        "technical",
+        "feasible",
+        "options",
+        "how long to build"
+      ],
+      "answer": "Estimates: faster SMS provider — 2 weeks. Show the QR before reaching the till — 4 weeks. Risk-based step-up, only for new devices or high-value payments — 5 weeks, needs fraud team sign-off.",
+      "coach_tip": "Map these to options and weigh impact vs effort.",
+      "model_question": "What are our options and estimates?"
+    }
+  ],
+  "unavailable": [
+    {
+      "keywords": [
+        "market share",
+        "competitor revenue",
+        "competitor data"
+      ]
+    },
+    {
+      "keywords": [
+        "marketing spend",
+        "campaign",
+        "advertising"
+      ]
+    },
+    {
+      "keywords": [
+        "customer names",
+        "individual customer",
+        "specific customer"
+      ]
+    }
+  ],
+  "rubric": {
+    "problem": {
+      "segment": [
+        "in-store",
+        "instore",
+        "wallet users",
+        "customers",
+        "users",
+        "payers"
+      ],
+      "step": [
+        "authorisation",
+        "authorization",
+        "payment",
+        "till",
+        "checkout",
+        "qr"
+      ],
+      "cause": [
+        "step-up",
+        "one-time code",
+        "otp",
+        "sms",
+        "biometric",
+        "authentication",
+        "extra step",
+        "extra steps"
+      ]
+    },
+    "hypothesis": {
+      "change": [
+        "risk-based",
+        "step-up",
+        "new device",
+        "new devices",
+        "high-value",
+        "remove",
+        "faster sms"
+      ],
+      "metric": [
+        "authorisation",
+        "authorization",
+        "active",
+        "payers",
+        "completion",
+        "payments"
+      ]
+    }
+  },
+  "model_answer": {
+    "problem_statement": "In-store wallet users are abandoning at payment authorisation — authorisation fell from 78% to 46% — because every in-store payment now needs a biometric check plus a one-time SMS code, so monthly active payers fell from 26% to 18% of activated users.",
+    "options": [
+      {
+        "name": "Faster SMS provider",
+        "description": "Switch to a faster SMS provider for one-time codes.",
+        "customer_impact": "Shorter wait at the till.",
+        "business_impact": "Helps the 29% late-code complaints only.",
+        "severity": "Low",
+        "effort": "S · 2 weeks",
+        "why": "Quick, but keeps the extra step."
+      },
+      {
+        "name": "Risk-based step-up",
+        "description": "Ask for the extra check only on new devices or high-value payments.",
+        "customer_impact": "Most payments go back to one tap.",
+        "business_impact": "Targets 76% of complaints; could recover most of the 8-point drop.",
+        "severity": "High",
+        "effort": "M · 5 weeks",
+        "why": "Removes friction where fraud risk is low."
+      },
+      {
+        "name": "QR before the till",
+        "description": "Let customers open their QR before reaching the counter.",
+        "customer_impact": "Faster at the till.",
+        "business_impact": "Shorter queues; doesn't fix the extra code.",
+        "severity": "Medium",
+        "effort": "M · 4 weeks",
+        "why": "Nice add-on, not the root cause."
+      }
+    ],
+    "recommended_index": 1,
+    "decision": "Build risk-based step-up with the fraud team in 5 weeks, so only new devices and high-value payments need the extra code, and switch SMS providers now as a quick win.",
+    "hypothesis": "If we apply step-up only to new devices and high-value payments, in-store authorisation will rise from 46% to 70%+ and monthly active payers from 18% to 26% within two quarters, because the drop began with blanket step-up and most fraud comes from new devices.",
+    "test": "Staged rollout: 20% of trusted-device users get risk-based step-up for 4 weeks vs a control group.",
+    "success_metrics": [
+      "In-store authorisation rate",
+      "Monthly active payers",
+      "Payments per active user",
+      "App store rating",
+      "Time at the till"
+    ],
+    "guardrails": [
+      "Fraud losses as % of payment value",
+      "Account takeover incidents",
+      "False declines",
+      "Complaint volume",
+      "Partner chargebacks"
+    ]
+  }
+}

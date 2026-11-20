@@ -1,0 +1,392 @@
+{
+  "id": "brightbank-retention",
+  "company": "Brightbank",
+  "type": "Retention",
+  "area": "Neobanks and digital banking",
+  "title": "Salary switchers drift away",
+  "disclaimer": "Practice scenario. The company is fictional and every figure is hypothetical. Australian market context is general.",
+  "company_context": "Brightbank (fictional) is an Australian app-only bank offering everyday accounts, savings and cards, and aims to become customers' main bank.",
+  "sources": [],
+  "brief": {
+    "problem": "New customers who move their salary to Brightbank are moving it away again within six months.",
+    "objective": "Raise six-month salary retention from 58% to 75% within nine months.",
+    "baseline": [
+      "Customers moving their salary in: about 4,000 a month.",
+      "Still salaried with us after six months: 58%, down from 72% a year ago."
+    ]
+  },
+  "facts": [
+    {
+      "id": "B1",
+      "phase": "frame",
+      "topic": "Financial impact",
+      "essential": true,
+      "keywords": [
+        "financial impact",
+        "revenue",
+        "cost",
+        "costing",
+        "money",
+        "fee",
+        "fees",
+        "dollar",
+        "worth",
+        "impact",
+        "margin",
+        "interchange"
+      ],
+      "answer": "A salaried customer earns us about $22 a month from interchange, deposit margin and fees. The 14-point drop means about 560 fewer salaried customers per monthly cohort — about $148k a year per cohort, and it compounds.",
+      "coach_tip": "Say the 'so what': main-bank customers are the whole business model.",
+      "model_question": "What's a salaried customer worth, and what does the drop cost?"
+    },
+    {
+      "id": "B2",
+      "phase": "frame",
+      "topic": "Metric definition",
+      "essential": true,
+      "keywords": [
+        "define",
+        "definition",
+        "defined",
+        "measured",
+        "measure",
+        "metric",
+        "calculate",
+        "count",
+        "counts",
+        "means",
+        "retention",
+        "salaried",
+        "salary"
+      ],
+      "answer": "Salary retention means the customer still receives at least one employer payment of $1,000 or more in month six after their first salary deposit.",
+      "coach_tip": "Now you know retention means salary staying, not the account staying open.",
+      "model_question": "How is salary retention measured?"
+    },
+    {
+      "id": "B3",
+      "phase": "find",
+      "topic": "Segments",
+      "essential": true,
+      "keywords": [
+        "segment",
+        "segments",
+        "breakdown",
+        "split",
+        "which customers",
+        "who is",
+        "who",
+        "group",
+        "groups",
+        "age",
+        "under 30",
+        "30",
+        "45",
+        "home loan",
+        "mortgage"
+      ],
+      "answer": "Under-30s: 61% retention (was 70%). 30–45s: 52% (was 74%). Customers with a home loan elsewhere: 41%.",
+      "coach_tip": "30–45s and home-loan holders drop most — they have the most bills.",
+      "model_question": "Which customer segments are leaving most?"
+    },
+    {
+      "id": "B4",
+      "phase": "find",
+      "topic": "Behaviour",
+      "essential": true,
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "doing",
+        "differently",
+        "do differently",
+        "bills",
+        "direct debit",
+        "direct debits",
+        "debits",
+        "payments",
+        "before they leave",
+        "usage"
+      ],
+      "answer": "Before moving their salary out, leavers have only 1–2 bills or direct debits set up with us, compared with 6 or more for customers who stay. Most leavers never moved their direct debits across.",
+      "coach_tip": "Bills anchor customers — that's your lead.",
+      "model_question": "What do leavers do differently from customers who stay?"
+    },
+    {
+      "id": "B5",
+      "phase": "find",
+      "topic": "Switching funnel",
+      "essential": true,
+      "keywords": [
+        "funnel",
+        "journey",
+        "steps",
+        "step",
+        "conversion",
+        "drop",
+        "drop-off",
+        "dropoff",
+        "flow",
+        "stages",
+        "process",
+        "switch",
+        "switching"
+      ],
+      "answer": "Switching journey: salary moved 100% → bill switch started 44% → bill switch completed 19% (was 47%).",
+      "coach_tip": "Completion fell from 47% to 19% — that's the break.",
+      "model_question": "Can I see the switching journey funnel?"
+    },
+    {
+      "id": "B6",
+      "phase": "find",
+      "topic": "Channels",
+      "essential": false,
+      "keywords": [
+        "channel",
+        "channels",
+        "app",
+        "how do",
+        "contact",
+        "billers",
+        "biller"
+      ],
+      "answer": "Direct debit switching happens in the app. Customers must contact each biller themselves or enter biller details one by one.",
+      "coach_tip": "Manual effort per biller adds up fast.",
+      "model_question": "How do customers switch their bills today?"
+    },
+    {
+      "id": "B7",
+      "phase": "prove",
+      "topic": "What changed",
+      "essential": true,
+      "keywords": [
+        "change",
+        "changed",
+        "changes",
+        "release",
+        "released",
+        "new",
+        "launch",
+        "launched",
+        "recently",
+        "introduced",
+        "vendor",
+        "switching service",
+        "automated"
+      ],
+      "answer": "Eight months ago the automated 'switch my bills' service was turned off when the vendor contract ended. It was replaced with a manual checklist.",
+      "coach_tip": "Link this to the completion drop before calling it the cause.",
+      "model_question": "Did anything change in how customers switch their bills?"
+    },
+    {
+      "id": "B8",
+      "phase": "prove",
+      "topic": "Customer feedback",
+      "essential": true,
+      "keywords": [
+        "complaint",
+        "complaints",
+        "feedback",
+        "saying",
+        "say",
+        "nps",
+        "csat",
+        "tickets",
+        "reviews",
+        "survey",
+        "voice",
+        "exit",
+        "exit survey",
+        "why leave",
+        "reasons"
+      ],
+      "answer": "Exit survey: too hard to move everything 38%, better rate elsewhere 27%, missing features 21%, other 14%. App reviews mentioning switching tripled.",
+      "coach_tip": "Effort beats rate as the top reason.",
+      "model_question": "What do exit surveys and reviews say?"
+    },
+    {
+      "id": "B9",
+      "phase": "prove",
+      "topic": "Rates and competitors",
+      "essential": false,
+      "keywords": [
+        "rate",
+        "rates",
+        "interest",
+        "competitor",
+        "competitors",
+        "pricing"
+      ],
+      "answer": "Our savings rate is 0.3 points below the top competitor and hasn't changed in 12 months.",
+      "coach_tip": "Unchanged for a year, so it doesn't explain the new drop.",
+      "model_question": "Could interest rates or competitors explain this?"
+    },
+    {
+      "id": "B10",
+      "phase": "prove",
+      "topic": "Operations",
+      "essential": false,
+      "keywords": [
+        "operations",
+        "ops",
+        "support",
+        "staff",
+        "team",
+        "capacity",
+        "backlog",
+        "contacts",
+        "calls"
+      ],
+      "answer": "Support gets about 2,600 contacts a month asking how to move direct debits.",
+      "coach_tip": "A cost-to-serve benefit and a guardrail.",
+      "model_question": "What's the support load from switching?"
+    },
+    {
+      "id": "B11",
+      "phase": "pick",
+      "topic": "Constraints and estimates",
+      "essential": false,
+      "keywords": [
+        "estimate",
+        "estimates",
+        "engineering",
+        "constraint",
+        "constraints",
+        "build",
+        "technical",
+        "feasible",
+        "options",
+        "how long to build",
+        "cdr",
+        "open banking",
+        "payto"
+      ],
+      "answer": "Estimates: better checklist with reminders — 2 weeks. Pre-filled switch list from the last 90 days of transactions, using Open Banking (CDR) consent — 6 weeks. PayTo-based bill switching for the top 50 billers — 10 weeks. Re-signing a switching vendor — 8 weeks plus $180k a year.",
+      "coach_tip": "Sort these into quick fix, medium and big bet.",
+      "model_question": "What are our options and estimates?"
+    }
+  ],
+  "unavailable": [
+    {
+      "keywords": [
+        "market share",
+        "competitor revenue",
+        "competitor data"
+      ]
+    },
+    {
+      "keywords": [
+        "marketing spend",
+        "campaign",
+        "advertising"
+      ]
+    },
+    {
+      "keywords": [
+        "customer names",
+        "individual customer",
+        "specific customer"
+      ]
+    }
+  ],
+  "rubric": {
+    "problem": {
+      "segment": [
+        "30",
+        "45",
+        "new customers",
+        "salaried",
+        "customers",
+        "switchers",
+        "home loan"
+      ],
+      "step": [
+        "switch",
+        "switching",
+        "bills",
+        "direct debit",
+        "direct debits",
+        "billers"
+      ],
+      "cause": [
+        "manual",
+        "checklist",
+        "automated",
+        "vendor",
+        "turned off",
+        "hard",
+        "effort"
+      ]
+    },
+    "hypothesis": {
+      "change": [
+        "pre-fill",
+        "prefill",
+        "pre-filled",
+        "cdr",
+        "open banking",
+        "automate",
+        "payto",
+        "switch list",
+        "reminders"
+      ],
+      "metric": [
+        "completion",
+        "retention",
+        "direct debits",
+        "salary",
+        "contacts"
+      ]
+    }
+  },
+  "model_answer": {
+    "problem_statement": "Customers aged 30–45 who move their salary are leaving within six months because they never finish moving their bills — switch completion fell from 47% to 19% after the automated switching service was turned off — cutting salary retention from 72% to 58%, about 560 fewer salaried customers a month.",
+    "options": [
+      {
+        "name": "Checklist with reminders",
+        "description": "Improve the checklist and nudge customers to finish.",
+        "customer_impact": "Clearer steps, timely prompts.",
+        "business_impact": "Small lift; cuts some support contacts.",
+        "severity": "Low",
+        "effort": "S · 2 weeks",
+        "why": "Cheap, but still manual per biller."
+      },
+      {
+        "name": "Pre-filled switch list (CDR)",
+        "description": "Use Open Banking consent to list every bill from 90 days of transactions, ready to switch.",
+        "customer_impact": "See all your bills in one place, switch in a few taps.",
+        "business_impact": "Targets the 38% 'too hard' reason; could recover most of the 560 a month.",
+        "severity": "High",
+        "effort": "M · 6 weeks",
+        "why": "Biggest effort reduction for the time."
+      },
+      {
+        "name": "PayTo bill switching",
+        "description": "Move the top 50 billers to PayTo agreements automatically.",
+        "customer_impact": "Bills move with almost no effort.",
+        "business_impact": "Strongest long-term fix; slower to land.",
+        "severity": "High",
+        "effort": "L · 10 weeks",
+        "why": "Best experience, but longest build."
+      }
+    ],
+    "recommended_index": 1,
+    "decision": "Build the pre-filled switch list in 6 weeks, add reminders in 2 weeks as a quick win, and scope PayTo switching for next quarter.",
+    "hypothesis": "If we pre-fill each new customer's switch list from their last 90 days of transactions, bill switch completion will rise from 19% to 40% and six-month salary retention from 58% to 70% within two quarters, because leavers rarely move their direct debits and 38% say switching is too hard.",
+    "test": "A/B test new salaried customers: pre-filled switch list vs the current checklist for 8 weeks.",
+    "success_metrics": [
+      "Bill switch completion rate",
+      "Direct debits per customer at day 60",
+      "Six-month salary retention",
+      "Switching support contacts",
+      "App store rating"
+    ],
+    "guardrails": [
+      "CDR consent rates and privacy complaints",
+      "Failed or duplicate debits",
+      "Cost to serve",
+      "Payee-change fraud",
+      "Customer complaints"
+    ]
+  }
+}

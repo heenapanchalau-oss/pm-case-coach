@@ -1,0 +1,37 @@
+[
+  {
+    "id": "paynest-onboarding",
+    "company": "PayNest",
+    "type": "Onboarding",
+    "area": "Payments and PayTo",
+    "title": "Merchants stall before going live on PayTo"
+  },
+  {
+    "id": "taploop-engagement",
+    "company": "TapLoop",
+    "type": "Engagement",
+    "area": "Digital wallets and loyalty",
+    "title": "Wallet activated, but rarely used to pay"
+  },
+  {
+    "id": "brightbank-retention",
+    "company": "Brightbank",
+    "type": "Retention",
+    "area": "Neobanks and digital banking",
+    "title": "Salary switchers drift away"
+  },
+  {
+    "id": "lendleaf-revenue",
+    "company": "LendLeaf",
+    "type": "Revenue",
+    "area": "Lending",
+    "title": "Steady applications, falling loan revenue"
+  },
+  {
+    "id": "cleartrace-growth",
+    "company": "ClearTrace",
+    "type": "Growth",
+    "area": "Regtech (AML/KYC)",
+    "title": "New clients take too long to go live"
+  }
+]

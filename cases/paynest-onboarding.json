@@ -1,0 +1,398 @@
+{
+  "id": "paynest-onboarding",
+  "company": "PayNest",
+  "type": "Onboarding",
+  "area": "Payments and PayTo",
+  "title": "Merchants stall before going live on PayTo",
+  "disclaimer": "Practice scenario. The company is fictional and every figure is hypothetical. Australian market context is general.",
+  "company_context": "PayNest (fictional) is an Australian payments provider that lets subscription businesses collect recurring payments through PayTo on the New Payments Platform.",
+  "sources": [],
+  "brief": {
+    "problem": "Merchants sign up for PayNest but far fewer are going live with their first PayTo payment.",
+    "objective": "Lift 30-day merchant go-live from 38% to 60% within six months.",
+    "baseline": [
+      "30-day merchant go-live: 38%, down from 55% two quarters ago.",
+      "New merchant sign-ups: about 900 a month, steady."
+    ]
+  },
+  "facts": [
+    {
+      "id": "P1",
+      "phase": "frame",
+      "topic": "Financial impact",
+      "essential": true,
+      "keywords": [
+        "financial impact",
+        "revenue",
+        "cost",
+        "costing",
+        "money",
+        "fee",
+        "fees",
+        "dollar",
+        "worth",
+        "impact"
+      ],
+      "answer": "A live merchant brings in about $1,600 a month in fees at maturity. The drop means about 150 fewer merchants going live each month — roughly $240k of monthly fee revenue per cohort at maturity, or about $2.9m a year.",
+      "coach_tip": "Size it, then say the 'so what': every monthly cohort compounds the loss.",
+      "model_question": "What's the revenue impact of fewer merchants going live?"
+    },
+    {
+      "id": "P2",
+      "phase": "frame",
+      "topic": "Metric definition",
+      "essential": true,
+      "keywords": [
+        "define",
+        "definition",
+        "defined",
+        "measured",
+        "measure",
+        "metric",
+        "calculate",
+        "count",
+        "counts",
+        "means",
+        "go-live",
+        "go live",
+        "live"
+      ],
+      "answer": "Go-live means a merchant's first PayTo agreement is authorised by a customer and the first payment settles, within 30 days of sign-up.",
+      "coach_tip": "Knowing go-live needs a settled payment tells you to look at the whole setup journey.",
+      "model_question": "How exactly is go-live defined and measured?"
+    },
+    {
+      "id": "P3",
+      "phase": "frame",
+      "topic": "Merchant mix",
+      "essential": false,
+      "keywords": [
+        "how many",
+        "mix",
+        "types",
+        "kind of merchants",
+        "size",
+        "small",
+        "mid-size"
+      ],
+      "answer": "About 900 merchants sign up a month. 70% are small subscription businesses like gyms, childcare and software; 30% are mid-size billers.",
+      "coach_tip": "The mix tells you where to segment next.",
+      "model_question": "What kinds of merchants sign up, and in what mix?"
+    },
+    {
+      "id": "P4",
+      "phase": "find",
+      "topic": "Segments",
+      "essential": true,
+      "keywords": [
+        "segment",
+        "segments",
+        "breakdown",
+        "split",
+        "which customers",
+        "who is",
+        "who",
+        "group",
+        "groups",
+        "small",
+        "mid-size",
+        "billers",
+        "size"
+      ],
+      "answer": "Small merchants: 30-day go-live fell from 52% to 31%. Mid-size billers: from 62% to 55%.",
+      "coach_tip": "Small merchants carry most of the drop — name that.",
+      "model_question": "Which merchant segments are driving the drop?"
+    },
+    {
+      "id": "P5",
+      "phase": "find",
+      "topic": "Behaviour",
+      "essential": false,
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "doing",
+        "differently",
+        "do differently",
+        "time",
+        "how long",
+        "days",
+        "never",
+        "stuck",
+        "stall"
+      ],
+      "answer": "Median time from sign-up to the first agreement is now 19 days, up from 6. 41% of small merchants never create an agreement at all.",
+      "coach_tip": "Slower and stuck — look for the step where they stall.",
+      "model_question": "How long does it take merchants to create a first agreement now?"
+    },
+    {
+      "id": "P6",
+      "phase": "find",
+      "topic": "Onboarding funnel",
+      "essential": true,
+      "keywords": [
+        "funnel",
+        "journey",
+        "steps",
+        "step",
+        "conversion",
+        "drop",
+        "drop-off",
+        "dropoff",
+        "flow",
+        "stages",
+        "process",
+        "onboarding"
+      ],
+      "answer": "Last quarter: sign-up 100% → business verified 91% → bank account linked 84% → API or plugin connected 49% (was 78%) → first agreement authorised 41% → first payment settled 38%.",
+      "coach_tip": "The biggest drop is the integration step: 78% to 49%.",
+      "model_question": "Can I see the onboarding funnel, and where's the biggest drop?"
+    },
+    {
+      "id": "P7",
+      "phase": "find",
+      "topic": "Channels",
+      "essential": false,
+      "keywords": [
+        "channel",
+        "channels",
+        "plugin",
+        "api",
+        "integration",
+        "connect",
+        "how do they"
+      ],
+      "answer": "Small merchants mostly connect through the no-code billing plugin for common platforms. Mid-size billers use the API with developer support.",
+      "coach_tip": "The plugin is the small-merchant path — that's where to look.",
+      "model_question": "How do different merchants connect to PayNest?"
+    },
+    {
+      "id": "P8",
+      "phase": "prove",
+      "topic": "What changed",
+      "essential": true,
+      "keywords": [
+        "change",
+        "changed",
+        "changes",
+        "release",
+        "released",
+        "new",
+        "launch",
+        "launched",
+        "recently",
+        "introduced",
+        "plugin"
+      ],
+      "answer": "Two quarters ago the no-code plugin was replaced with a new version that makes merchants generate API keys and configure webhooks themselves. The old one-click connect was retired.",
+      "coach_tip": "Link the change to the integration drop before calling it the cause.",
+      "model_question": "Did anything change in the plugin or setup process?"
+    },
+    {
+      "id": "P9",
+      "phase": "prove",
+      "topic": "Merchant feedback",
+      "essential": true,
+      "keywords": [
+        "complaint",
+        "complaints",
+        "feedback",
+        "saying",
+        "say",
+        "nps",
+        "csat",
+        "tickets",
+        "reviews",
+        "survey",
+        "voice"
+      ],
+      "answer": "New-merchant support tickets doubled to 1,300 a month. Themes: can't set up API keys 44%, webhook errors 27%, pricing questions 12%. Onboarding CSAT fell from 4.4 to 3.1 out of 5.",
+      "coach_tip": "Two themes cover 71% of tickets — your fix should target them.",
+      "model_question": "What are new merchants telling us in tickets and CSAT?"
+    },
+    {
+      "id": "P10",
+      "phase": "prove",
+      "topic": "Competitors and pricing",
+      "essential": false,
+      "keywords": [
+        "competitor",
+        "competitors",
+        "pricing",
+        "price",
+        "offer",
+        "market"
+      ],
+      "answer": "Pricing hasn't changed. A competitor ran a fee-free first month, but win/loss notes mention it in only 6% of lost deals.",
+      "coach_tip": "Good to rule out — it doesn't explain the timing.",
+      "model_question": "Could pricing or a competitor explain this?"
+    },
+    {
+      "id": "P11",
+      "phase": "prove",
+      "topic": "Operations",
+      "essential": false,
+      "keywords": [
+        "operations",
+        "ops",
+        "support",
+        "staff",
+        "team",
+        "capacity",
+        "backlog",
+        "contacts",
+        "calls",
+        "assisted",
+        "specialist",
+        "specialists"
+      ],
+      "answer": "Four onboarding specialists can do assisted setup, but their queue is 12 days long.",
+      "coach_tip": "Assisted setup is a lever, but it doesn't scale.",
+      "model_question": "Do we offer assisted setup, and what's the capacity?"
+    },
+    {
+      "id": "P12",
+      "phase": "pick",
+      "topic": "Constraints and estimates",
+      "essential": false,
+      "keywords": [
+        "estimate",
+        "estimates",
+        "engineering",
+        "constraint",
+        "constraints",
+        "build",
+        "technical",
+        "feasible",
+        "options",
+        "how long to build"
+      ],
+      "answer": "Estimates: guided setup wizard with inline checks — 3 weeks. Restore one-click connect (OAuth) in the plugin — 6 weeks. Add 3 setup specialists — about $300k a year. PayTo requires the customer to authorise in their own banking app, so that step can't be removed.",
+      "coach_tip": "Map these to quick fix, medium and ongoing-cost options.",
+      "model_question": "What are our options and estimates to fix the setup step?"
+    }
+  ],
+  "unavailable": [
+    {
+      "keywords": [
+        "market share",
+        "competitor revenue",
+        "competitor data"
+      ]
+    },
+    {
+      "keywords": [
+        "marketing spend",
+        "campaign",
+        "advertising"
+      ]
+    },
+    {
+      "keywords": [
+        "customer names",
+        "individual customer",
+        "specific customer"
+      ]
+    }
+  ],
+  "rubric": {
+    "problem": {
+      "segment": [
+        "small",
+        "small merchants",
+        "subscription",
+        "merchants",
+        "gyms"
+      ],
+      "step": [
+        "plugin",
+        "api",
+        "connect",
+        "connection",
+        "integration",
+        "setup",
+        "go-live",
+        "webhook"
+      ],
+      "cause": [
+        "api keys",
+        "api key",
+        "webhook",
+        "webhooks",
+        "one-click",
+        "plugin",
+        "configure",
+        "manual"
+      ]
+    },
+    "hypothesis": {
+      "change": [
+        "one-click",
+        "oauth",
+        "wizard",
+        "guided",
+        "assisted",
+        "restore",
+        "simplify"
+      ],
+      "metric": [
+        "go-live",
+        "connected",
+        "connection",
+        "activation",
+        "days",
+        "agreement"
+      ]
+    }
+  },
+  "model_answer": {
+    "problem_statement": "Small subscription merchants are stalling at the integration step — plugin connection fell from 78% to 49% — because the new plugin makes them set up API keys and webhooks themselves, so 30-day go-live dropped from 55% to 38%, about 150 fewer live merchants a month.",
+    "options": [
+      {
+        "name": "Guided setup wizard",
+        "description": "Step-by-step setup with inline checks for keys and webhooks.",
+        "customer_impact": "Fewer errors and less guesswork.",
+        "business_impact": "Cuts tickets; partial lift in connection.",
+        "severity": "Medium",
+        "effort": "S · 3 weeks",
+        "why": "Fast relief, but merchants still handle keys."
+      },
+      {
+        "name": "Restore one-click connect",
+        "description": "OAuth connect in the plugin — no manual API keys or webhooks.",
+        "customer_impact": "Connect in minutes, no technical skills.",
+        "business_impact": "Targets 71% of tickets; could recover most of the 150 merchants a month.",
+        "severity": "High",
+        "effort": "M · 6 weeks",
+        "why": "Removes the root cause for small merchants."
+      },
+      {
+        "name": "Assisted setup team",
+        "description": "Add 3 specialists to set up merchants for them.",
+        "customer_impact": "A person does it for you.",
+        "business_impact": "Quick help, but about $300k a year ongoing.",
+        "severity": "Medium",
+        "effort": "Hire · ongoing cost",
+        "why": "Buys time, but doesn't scale."
+      }
+    ],
+    "recommended_index": 1,
+    "decision": "Ship the guided wizard in 3 weeks to cut errors now, and restore one-click connect within 6 weeks so small merchants never handle API keys.",
+    "hypothesis": "If we restore one-click connect for small merchants, plugin connection will rise from 49% to 75%+ and 30-day go-live from 38% to 55% within two quarters, because the drop started when one-click was retired and 71% of tickets cite API keys or webhooks.",
+    "test": "A/B test new small-merchant sign-ups: one-click connect vs the current plugin for 6 weeks.",
+    "success_metrics": [
+      "Plugin connection rate",
+      "30-day go-live rate",
+      "Median days to first agreement",
+      "First payments settled",
+      "Onboarding CSAT"
+    ],
+    "guardrails": [
+      "Token or access security incidents",
+      "Failed or duplicate payments",
+      "Support tickets per merchant",
+      "PayTo authorisation compliance",
+      "Specialist queue time"
+    ]
+  }
+}

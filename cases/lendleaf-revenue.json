@@ -1,0 +1,388 @@
+{
+  "id": "lendleaf-revenue",
+  "company": "LendLeaf",
+  "type": "Revenue",
+  "area": "Lending",
+  "title": "Steady applications, falling loan revenue",
+  "disclaimer": "Practice scenario. The company is fictional and every figure is hypothetical. Australian market context is general.",
+  "company_context": "LendLeaf (fictional) is an Australian digital lender offering unsecured personal loans through its app and a broker channel.",
+  "sources": [],
+  "brief": {
+    "problem": "Personal loan revenue is falling even though application numbers are steady.",
+    "objective": "Bring funded loan volume back to $45m a month within six months.",
+    "baseline": [
+      "Funded loans: $31m a month, down from $45m.",
+      "Applications: about 6,000 a month, steady."
+    ]
+  },
+  "facts": [
+    {
+      "id": "L1",
+      "phase": "frame",
+      "topic": "Financial impact",
+      "essential": true,
+      "keywords": [
+        "financial impact",
+        "revenue",
+        "cost",
+        "costing",
+        "money",
+        "fee",
+        "fees",
+        "dollar",
+        "worth",
+        "impact",
+        "margin",
+        "interest"
+      ],
+      "answer": "Net interest margin plus fees averages about 6% a year on funded balances. The $14m monthly shortfall means about $840k less annual revenue for every month it continues.",
+      "coach_tip": "Say the 'so what': every month of lost volume locks in a year of lost revenue.",
+      "model_question": "What's the revenue impact of the funded volume drop?"
+    },
+    {
+      "id": "L2",
+      "phase": "frame",
+      "topic": "Metric definition",
+      "essential": true,
+      "keywords": [
+        "define",
+        "definition",
+        "defined",
+        "measured",
+        "measure",
+        "metric",
+        "calculate",
+        "count",
+        "counts",
+        "means",
+        "funded",
+        "funded volume",
+        "volume",
+        "application"
+      ],
+      "answer": "Funded volume is the total paid out to customers in the month. An application counts once it's submitted with ID. The funded rate has fallen from 42% of applications to 29%.",
+      "coach_tip": "Volume fell while applications held, so look at conversion, not demand.",
+      "model_question": "How are funded volume and conversion measured?"
+    },
+    {
+      "id": "L3",
+      "phase": "find",
+      "topic": "Segments",
+      "essential": true,
+      "keywords": [
+        "segment",
+        "segments",
+        "breakdown",
+        "split",
+        "which customers",
+        "who is",
+        "who",
+        "group",
+        "groups",
+        "self-employed",
+        "self employed",
+        "payg",
+        "employees",
+        "employed"
+      ],
+      "answer": "Self-employed applicants: funded rate fell from 31% to 12%. PAYG employees: from 46% to 35%. Self-employed make up about a quarter of applications.",
+      "coach_tip": "Both fell, but self-employed collapsed — name both.",
+      "model_question": "Which applicant segments are converting worse?"
+    },
+    {
+      "id": "L4",
+      "phase": "find",
+      "topic": "Behaviour",
+      "essential": false,
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "doing",
+        "differently",
+        "do differently",
+        "drawdown",
+        "draw down",
+        "loan size",
+        "average loan",
+        "accept",
+        "accepted"
+      ],
+      "answer": "Approved applicants who don't draw down: 9%, unchanged. Average loan size is steady at about $18,000.",
+      "coach_tip": "Loss isn't after approval — it's earlier.",
+      "model_question": "Are approved customers taking smaller loans or not drawing down?"
+    },
+    {
+      "id": "L5",
+      "phase": "find",
+      "topic": "Application funnel",
+      "essential": true,
+      "keywords": [
+        "funnel",
+        "journey",
+        "steps",
+        "step",
+        "conversion",
+        "drop",
+        "drop-off",
+        "dropoff",
+        "flow",
+        "stages",
+        "process",
+        "application",
+        "applications"
+      ],
+      "answer": "Submitted 100% → identity verified 95% → income verified 52% (was 81%) → credit approved 31% → funded 29%.",
+      "coach_tip": "The biggest drop is income verification: 81% to 52%.",
+      "model_question": "Can I see the application funnel and where it drops?"
+    },
+    {
+      "id": "L6",
+      "phase": "find",
+      "topic": "Channels",
+      "essential": false,
+      "keywords": [
+        "channel",
+        "channels",
+        "app",
+        "broker",
+        "brokers",
+        "mobile",
+        "web"
+      ],
+      "answer": "88% of applications come through the mobile app and 12% through brokers. The broker funded rate is steady at 47%.",
+      "coach_tip": "Brokers are fine — the issue is in the app journey.",
+      "model_question": "Does the drop differ by channel?"
+    },
+    {
+      "id": "L7",
+      "phase": "prove",
+      "topic": "What changed",
+      "essential": true,
+      "keywords": [
+        "change",
+        "changed",
+        "changes",
+        "release",
+        "released",
+        "new",
+        "launch",
+        "launched",
+        "recently",
+        "introduced",
+        "income verification",
+        "verification",
+        "cdr",
+        "open banking",
+        "upload"
+      ],
+      "answer": "Four months ago, income verification moved from uploading payslips or tax returns to linking bank accounts via Open Banking (CDR) only. Uploads were removed to cut manual review costs.",
+      "coach_tip": "Link this to the verification drop and the self-employed collapse.",
+      "model_question": "Did anything change in income verification?"
+    },
+    {
+      "id": "L8",
+      "phase": "prove",
+      "topic": "Customer feedback",
+      "essential": true,
+      "keywords": [
+        "complaint",
+        "complaints",
+        "feedback",
+        "saying",
+        "say",
+        "nps",
+        "csat",
+        "tickets",
+        "reviews",
+        "survey",
+        "voice",
+        "drop-off survey",
+        "why"
+      ],
+      "answer": "Drop-off survey: my bank isn't supported or wouldn't connect 36%, didn't want to share bank data 29%, self-employed income looked wrong 22%. Complaints about declined loans doubled.",
+      "coach_tip": "65% cite bank-linking problems — that's your target.",
+      "model_question": "What do applicants who drop out tell us?"
+    },
+    {
+      "id": "L9",
+      "phase": "prove",
+      "topic": "Rates and competitors",
+      "essential": false,
+      "keywords": [
+        "rate",
+        "rates",
+        "interest rate",
+        "competitor",
+        "competitors",
+        "pricing",
+        "price"
+      ],
+      "answer": "Our rates rose 0.25 points in the same period. Competitor rates rose by a similar amount.",
+      "coach_tip": "Market-wide, so it doesn't explain our drop.",
+      "model_question": "Could rates or competitors explain this?"
+    },
+    {
+      "id": "L10",
+      "phase": "prove",
+      "topic": "Operations",
+      "essential": false,
+      "keywords": [
+        "operations",
+        "ops",
+        "support",
+        "staff",
+        "team",
+        "capacity",
+        "backlog",
+        "contacts",
+        "calls",
+        "manual review",
+        "reviewers",
+        "cost savings"
+      ],
+      "answer": "The manual review team was cut from 10 to 4 people, saving about $450k a year.",
+      "coach_tip": "The saving is real, but much smaller than the revenue lost.",
+      "model_question": "What did the change save in operations?"
+    },
+    {
+      "id": "L11",
+      "phase": "pick",
+      "topic": "Constraints and estimates",
+      "essential": false,
+      "keywords": [
+        "estimate",
+        "estimates",
+        "engineering",
+        "constraint",
+        "constraints",
+        "build",
+        "technical",
+        "feasible",
+        "options",
+        "how long to build",
+        "fallback"
+      ],
+      "answer": "Estimates: bring back document upload as a fallback — 3 weeks plus about 2 reviewers ($180k a year). Accountant-prepared statements for self-employed — 5 weeks. A second CDR provider to cover more banks — 7 weeks.",
+      "coach_tip": "Weigh $180k a year against $840k of revenue per month of lost volume.",
+      "model_question": "What are our options and estimates?"
+    }
+  ],
+  "unavailable": [
+    {
+      "keywords": [
+        "market share",
+        "competitor revenue",
+        "competitor data"
+      ]
+    },
+    {
+      "keywords": [
+        "marketing spend",
+        "campaign",
+        "advertising"
+      ]
+    },
+    {
+      "keywords": [
+        "customer names",
+        "individual customer",
+        "specific customer"
+      ]
+    }
+  ],
+  "rubric": {
+    "problem": {
+      "segment": [
+        "self-employed",
+        "self employed",
+        "applicants",
+        "customers",
+        "app"
+      ],
+      "step": [
+        "income verification",
+        "verification",
+        "income",
+        "verify"
+      ],
+      "cause": [
+        "cdr",
+        "open banking",
+        "bank-linking",
+        "linking",
+        "upload",
+        "uploads",
+        "removed",
+        "connect"
+      ]
+    },
+    "hypothesis": {
+      "change": [
+        "upload",
+        "fallback",
+        "document",
+        "restore",
+        "second provider",
+        "accountant",
+        "statements"
+      ],
+      "metric": [
+        "verification",
+        "funded",
+        "volume",
+        "pass rate",
+        "approval"
+      ]
+    }
+  },
+  "model_answer": {
+    "problem_statement": "App applicants, especially the self-employed, are dropping out at income verification — the pass rate fell from 81% to 52% — because uploads were removed and bank-linking via CDR fails or puts people off, cutting funded loans from $45m to $31m a month.",
+    "options": [
+      {
+        "name": "Upload fallback",
+        "description": "Bring back payslip and tax return uploads when bank-linking fails or is declined.",
+        "customer_impact": "A way through for everyone.",
+        "business_impact": "Targets 65% of drop-outs; could restore most of the $14m a month for $180k a year.",
+        "severity": "High",
+        "effort": "S · 3 weeks + 2 reviewers",
+        "why": "Fastest, biggest recovery for the cost."
+      },
+      {
+        "name": "Self-employed statements",
+        "description": "Accept accountant-prepared income statements for self-employed applicants.",
+        "customer_impact": "Self-employed income assessed fairly.",
+        "business_impact": "Helps the 22% whose income looked wrong.",
+        "severity": "Medium",
+        "effort": "M · 5 weeks",
+        "why": "Fixes one segment only."
+      },
+      {
+        "name": "Second CDR provider",
+        "description": "Add another provider to cover more banks.",
+        "customer_impact": "More banks connect first time.",
+        "business_impact": "Helps the 36% whose bank failed; not those who won't share data.",
+        "severity": "Medium",
+        "effort": "L · 7 weeks",
+        "why": "Useful, but slower and partial."
+      }
+    ],
+    "recommended_index": 0,
+    "decision": "Restore document upload as a fallback within 3 weeks, staffed by 2 reviewers, and add a second CDR provider next quarter to shrink manual reviews over time.",
+    "hypothesis": "If we restore document upload as a fallback when bank-linking fails or is declined, income verification will rise from 52% to 75% and funded volume from $31m to $42m a month within one quarter, because the drop started when uploads were removed and 65% of drop-outs cite bank-linking problems.",
+    "test": "A/B test app applicants: fallback upload vs CDR-only for 4 weeks.",
+    "success_metrics": [
+      "Income verification pass rate",
+      "Funded rate",
+      "Funded volume per month",
+      "Self-employed funded rate",
+      "Time to decision"
+    ],
+    "guardrails": [
+      "Arrears and defaults",
+      "Document fraud",
+      "Manual review cost",
+      "Time to decision",
+      "Responsible lending compliance"
+    ]
+  }
+}

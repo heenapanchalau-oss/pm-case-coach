@@ -1,0 +1,392 @@
+{
+  "id": "cleartrace-growth",
+  "company": "ClearTrace",
+  "type": "Growth",
+  "area": "Regtech (AML/KYC)",
+  "title": "New clients take too long to go live",
+  "disclaimer": "Practice scenario. The company is fictional and every figure is hypothetical. Australian market context is general.",
+  "company_context": "ClearTrace (fictional) is an Australian regtech SaaS that helps banks, fintechs and remitters monitor transactions and submit AUSTRAC reports.",
+  "sources": [],
+  "brief": {
+    "problem": "New clients are taking much longer to go live, so new revenue lands late and some deals are cancelling.",
+    "objective": "Cut median time to go-live from 21 weeks back to 12 within nine months.",
+    "baseline": [
+      "Median time from contract to go-live: 21 weeks, up from 11 a year ago.",
+      "New contracts: about 8 a quarter, averaging $150k annual recurring revenue (ARR)."
+    ]
+  },
+  "facts": [
+    {
+      "id": "C1",
+      "phase": "frame",
+      "topic": "Financial impact",
+      "essential": true,
+      "keywords": [
+        "financial impact",
+        "revenue",
+        "cost",
+        "costing",
+        "money",
+        "fee",
+        "fees",
+        "dollar",
+        "worth",
+        "impact",
+        "arr",
+        "delayed",
+        "cancel",
+        "cancelled"
+      ],
+      "answer": "Revenue starts at go-live. Ten extra weeks across 8 contracts a quarter at $150k ARR delays about $230k of revenue each quarter. Two contracts cancelled in the last six months, losing $300k ARR.",
+      "coach_tip": "Name both: delayed revenue and lost deals.",
+      "model_question": "What's the revenue impact of slower go-lives?"
+    },
+    {
+      "id": "C2",
+      "phase": "frame",
+      "topic": "Metric definition",
+      "essential": true,
+      "keywords": [
+        "define",
+        "definition",
+        "defined",
+        "measured",
+        "measure",
+        "metric",
+        "calculate",
+        "count",
+        "counts",
+        "means",
+        "go-live",
+        "go live",
+        "live"
+      ],
+      "answer": "Go-live means the first production transaction is screened and the client's first AUSTRAC report is submitted from the platform.",
+      "coach_tip": "Go-live depends on the client's data flowing — a clue.",
+      "model_question": "How is go-live defined?"
+    },
+    {
+      "id": "C3",
+      "phase": "find",
+      "topic": "Segments",
+      "essential": true,
+      "keywords": [
+        "segment",
+        "segments",
+        "breakdown",
+        "split",
+        "which customers",
+        "who is",
+        "who",
+        "group",
+        "groups",
+        "small",
+        "fintech",
+        "fintechs",
+        "remitters",
+        "banks",
+        "size"
+      ],
+      "answer": "Small fintechs and remitters (under 50 staff): median 26 weeks, up from 10. Banks: 15 weeks, up from 13.",
+      "coach_tip": "Small clients drive the slowdown.",
+      "model_question": "Which client segments are slowest?"
+    },
+    {
+      "id": "C4",
+      "phase": "find",
+      "topic": "Behaviour",
+      "essential": true,
+      "keywords": [
+        "behaviour",
+        "behavior",
+        "doing",
+        "differently",
+        "do differently",
+        "data engineer",
+        "engineers",
+        "resources",
+        "stuck",
+        "stalled",
+        "where do they"
+      ],
+      "answer": "Small clients spend a median 11 weeks in data mapping. 5 of 9 stalled small clients have no in-house data engineer.",
+      "coach_tip": "They lack skills for a technical step — note it.",
+      "model_question": "Where do small clients get stuck, and why?"
+    },
+    {
+      "id": "C5",
+      "phase": "find",
+      "topic": "Implementation funnel",
+      "essential": true,
+      "keywords": [
+        "funnel",
+        "journey",
+        "steps",
+        "step",
+        "conversion",
+        "drop",
+        "drop-off",
+        "dropoff",
+        "flow",
+        "stages",
+        "process",
+        "implementation",
+        "stage",
+        "phases"
+      ],
+      "answer": "Median weeks for small clients: kickoff 1 → data mapping 11 (was 3) → rules configuration 6 → UAT 5 → go-live 3.",
+      "coach_tip": "Data mapping went from 3 to 11 weeks — that's the break.",
+      "model_question": "Can I see the implementation stages and time in each?"
+    },
+    {
+      "id": "C6",
+      "phase": "find",
+      "topic": "Channels",
+      "essential": false,
+      "keywords": [
+        "channel",
+        "channels",
+        "portal",
+        "calls",
+        "how do",
+        "support model"
+      ],
+      "answer": "Implementation runs through a client portal plus weekly calls with a ClearTrace implementation manager.",
+      "coach_tip": "Fine to check — the issue is the work itself.",
+      "model_question": "How is implementation delivered?"
+    },
+    {
+      "id": "C7",
+      "phase": "prove",
+      "topic": "What changed",
+      "essential": true,
+      "keywords": [
+        "change",
+        "changed",
+        "changes",
+        "release",
+        "released",
+        "new",
+        "launch",
+        "launched",
+        "recently",
+        "introduced",
+        "data model",
+        "iso",
+        "iso 20022",
+        "connectors",
+        "connector"
+      ],
+      "answer": "Nine months ago the platform moved to a new data model that needs clients to map transactions to ISO 20022 fields. Pre-built connectors for common core banking and remittance systems were not rebuilt for the new model.",
+      "coach_tip": "Link this to the mapping time jump.",
+      "model_question": "Did anything change in the platform or implementation process?"
+    },
+    {
+      "id": "C8",
+      "phase": "prove",
+      "topic": "Client feedback",
+      "essential": true,
+      "keywords": [
+        "complaint",
+        "complaints",
+        "feedback",
+        "saying",
+        "say",
+        "nps",
+        "csat",
+        "tickets",
+        "reviews",
+        "survey",
+        "voice",
+        "implementation csat"
+      ],
+      "answer": "Implementation CSAT fell from 8.6 to 5.9 out of 10. Themes: field mapping is unclear 41%, no connector for our system 33%, too many UAT rounds 15%.",
+      "coach_tip": "Mapping and connectors cover 74% of complaints.",
+      "model_question": "What are new clients saying about implementation?"
+    },
+    {
+      "id": "C9",
+      "phase": "prove",
+      "topic": "Operations",
+      "essential": false,
+      "keywords": [
+        "operations",
+        "ops",
+        "support",
+        "staff",
+        "team",
+        "capacity",
+        "backlog",
+        "contacts",
+        "calls",
+        "implementation team",
+        "managers",
+        "projects"
+      ],
+      "answer": "The implementation team has 6 managers handling about 5 projects each, with a backlog of 14 projects.",
+      "coach_tip": "Capacity is tight — any fix must reduce effort, not add it.",
+      "model_question": "What's the implementation team's capacity?"
+    },
+    {
+      "id": "C10",
+      "phase": "prove",
+      "topic": "Competitors",
+      "essential": false,
+      "keywords": [
+        "competitor",
+        "competitors",
+        "pricing",
+        "price",
+        "win rate",
+        "market"
+      ],
+      "answer": "Two competitors launched lower-priced plans, but our sales win rate is steady at 32%.",
+      "coach_tip": "Sales are fine — the problem is after signing.",
+      "model_question": "Could competitors explain this?"
+    },
+    {
+      "id": "C11",
+      "phase": "pick",
+      "topic": "Constraints and estimates",
+      "essential": false,
+      "keywords": [
+        "estimate",
+        "estimates",
+        "engineering",
+        "constraint",
+        "constraints",
+        "build",
+        "technical",
+        "feasible",
+        "options",
+        "how long to build",
+        "template",
+        "templates",
+        "partner"
+      ],
+      "answer": "Estimates: a partner data-mapping service — 2 weeks to set up, no build. Guided mapping templates with sample files — 4 weeks. Rebuild connectors for the top 5 source systems — 12 weeks.",
+      "coach_tip": "Map these to quick fix, medium and big bet.",
+      "model_question": "What are our options and estimates?"
+    }
+  ],
+  "unavailable": [
+    {
+      "keywords": [
+        "market share",
+        "competitor revenue",
+        "competitor data"
+      ]
+    },
+    {
+      "keywords": [
+        "marketing spend",
+        "campaign",
+        "advertising"
+      ]
+    },
+    {
+      "keywords": [
+        "customer names",
+        "individual customer",
+        "specific customer"
+      ]
+    }
+  ],
+  "rubric": {
+    "problem": {
+      "segment": [
+        "small",
+        "fintech",
+        "fintechs",
+        "remitters",
+        "clients",
+        "new clients"
+      ],
+      "step": [
+        "data mapping",
+        "mapping",
+        "implementation",
+        "onboarding",
+        "go-live",
+        "integration"
+      ],
+      "cause": [
+        "iso 20022",
+        "data model",
+        "connector",
+        "connectors",
+        "mapping",
+        "fields"
+      ]
+    },
+    "hypothesis": {
+      "change": [
+        "template",
+        "templates",
+        "guided",
+        "connector",
+        "connectors",
+        "partner",
+        "sample"
+      ],
+      "metric": [
+        "weeks",
+        "go-live",
+        "mapping",
+        "time",
+        "csat",
+        "arr"
+      ]
+    }
+  },
+  "model_answer": {
+    "problem_statement": "Small fintech and remitter clients are stuck in data mapping — now 11 weeks, up from 3 — because the new ISO 20022 data model has no pre-built connectors, pushing their go-live from 10 to 26 weeks and delaying about $230k of revenue a quarter.",
+    "options": [
+      {
+        "name": "Partner mapping service",
+        "description": "Refer small clients to a paid data-mapping partner.",
+        "customer_impact": "Experts do the mapping for them.",
+        "business_impact": "Fast relief; adds client cost.",
+        "severity": "Medium",
+        "effort": "S · 2 weeks, no build",
+        "why": "Quick, but shifts cost to clients."
+      },
+      {
+        "name": "Guided mapping templates",
+        "description": "Templates and sample files for common systems, with field-by-field guidance.",
+        "customer_impact": "Clear steps without a data engineer.",
+        "business_impact": "Targets the 41% 'unclear mapping' theme; could cut mapping to about 5 weeks.",
+        "severity": "High",
+        "effort": "M · 4 weeks",
+        "why": "Best impact for effort, scales across clients."
+      },
+      {
+        "name": "Rebuild top 5 connectors",
+        "description": "Pre-built connectors for the 5 most common source systems.",
+        "customer_impact": "Plug in and go.",
+        "business_impact": "Removes most mapping for covered systems.",
+        "severity": "High",
+        "effort": "L · 12 weeks",
+        "why": "Root-cause fix, but slow to land."
+      }
+    ],
+    "recommended_index": 1,
+    "decision": "Ship guided mapping templates in 4 weeks, offer the partner service right away for stalled clients, and start rebuilding the top 5 connectors next.",
+    "hypothesis": "If we give small clients guided mapping templates with sample files, data mapping will fall from 11 to 5 weeks and median go-live from 26 to 16 weeks within two quarters, because 41% of complaints cite unclear field mapping.",
+    "test": "Pilot with the next 6 small-client implementations vs the current process.",
+    "success_metrics": [
+      "Data mapping duration",
+      "Median time to go-live",
+      "Implementation CSAT",
+      "ARR live per quarter",
+      "Deals cancelled before go-live"
+    ],
+    "guardrails": [
+      "Mapping errors found in UAT",
+      "AUSTRAC reporting accuracy",
+      "Implementation team workload",
+      "Support tickets after go-live",
+      "Margin per implementation"
+    ]
+  }
+}

@@ -91,3 +91,32 @@ textarea{resize:vertical}
 .foot{text-align:center;font-size:12px;color:var(--mut);padding:24px}
 @media (max-width:640px){.op-row{grid-template-columns:1fr}.msg{max-width:100%}}
 @media print{@page{size:landscape;margin:0}body{background:#fff}.top,.foot,.no-print,main>section:not(#v-slide){display:none!important}main{padding:0;max-width:none}.slide{border:none;width:100%;border-radius:0}}
+/* one-pager wizard */
+.opsteps{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:12px 0}
+.opsteps button{border-radius:20px;font-size:13px;padding:6px 12px}
+.opsteps li.on button{background:var(--acc);border-color:var(--acc);color:#fff}
+.opsteps li.done button{border-color:var(--ok);color:var(--ok)}
+.opgrid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px;align-items:start}
+.opmain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.opmain h2{margin:0 0 8px;font-size:20px}
+.opq{display:block;border:0;padding:0;margin:0 0 16px}
+.opq>span,.opq legend{display:block;font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
+.opq input[type=text]{margin-top:6px}
+.rcards{display:flex;flex-wrap:wrap;gap:8px}
+.rcard{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px;background:var(--bg)}
+.rcard.on{border-color:var(--acc);background:var(--acc-bg)}
+.rcard input{accent-color:var(--acc)}
+.nums{display:flex;gap:8px;align-items:center;max-width:320px}
+.optcard{border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0;display:grid;gap:8px}
+.optcard.rec{border:2px solid var(--ok);background:var(--ok-bg)}
+.optrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.optname{font-weight:600}
+.rpick{display:flex;gap:6px;align-items:center;font-weight:600;font-size:14px}
+.badge{font-size:12px;border-radius:6px;padding:2px 8px;background:var(--acc-bg);color:var(--acc)}
+.badge.good{background:var(--ok);color:#fff}
+.ratings{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.ratings label{font-size:12.5px;color:var(--mut);display:flex;flex-direction:column;gap:4px}
+.oplive{position:sticky;top:70px;background:var(--acc-bg);border-radius:14px;padding:14px 16px;font-size:14px}
+.oplive h3{margin:0 0 8px;font-size:15px}
+[aria-disabled=true]{opacity:.5}
+@media (max-width:760px){.opgrid{grid-template-columns:1fr}.oplive{position:static}}

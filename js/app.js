@@ -156,39 +156,15 @@
     catch (e) { $("#s-err").textContent = e.message; }
   };
 
-  /* ---------- one-pager builder ---------- */
-  const OP = [
-    ["Context", [["company", "Company or product", "Who is this for?"], ["audience", "Audience", "Who will see this slide?"]]],
-    ["Problem", [["who", "Who is affected", "Which customers or users?"], ["where", "Where it happens", "Which step of the journey?"], ["why", "Why it happens", "The root cause your evidence points to"], ["howmuch", "What it costs", "Revenue, conversion, cost or risk — use numbers"], ["evidence", "Evidence", "Data, feedback or research behind it"]]],
-    ["Goal and constraints", [["objective", "Objective", "Outcome, target and date"], ["constraints", "Constraints", "Budget, timeline, tech, legal"], ["stakeholders", "Stakeholder views", "Who thinks what?"]]]
-  ];
-  const OPT_FIELDS = [["name", "Name"], ["description", "Description"], ["customer_impact", "Customer impact"], ["business_impact", "Business / commercial impact"], ["severity", "Severity (High / Medium / Low)"], ["effort", "Engineering estimate"], ["why", "Why select it"]];
-  const row = (id, label, hint) => `<div class="op-row"><label for="op-${id}">${esc(label)}<span>${esc(hint || "")}</span></label><div class="field"><textarea rows="2" id="op-${id}"></textarea><button type="button" class="mic" data-mic="op-${id}" aria-label="Speak" aria-pressed="false">🎤</button></div></div>`;
-  function renderOnePager() {
-    let h = OP.map(([g, fs]) => `<div class="op-group"><h3>${g}</h3>${fs.map(f => row(...f)).join("")}</div>`).join("");
-    h += ["A · Quick fix", "B · Medium", "C · Big bet"].map((t, i) => `<div class="op-group"><h3>Option ${t}</h3>${OPT_FIELDS.map(([k, l]) => row(`o${i}-${k}`, l)).join("")}</div>`).join("");
-    h += `<div class="op-group"><h3>Decision</h3><div class="op-row"><label for="op-pick">Recommended option</label><select id="op-pick"><option value="0">A</option><option value="1">B</option><option value="2">C</option></select></div>${row("decision", "Final decision", "What, why, and which concern it answers")}${row("hypothesis", "Hypothesis", "If we [change] for [segment], [metric] moves from A to B, because…")}${row("metrics", "Success metrics", "One per line")}${row("guardrails", "Guardrails", "One per line")}</div>`;
-    $("#op-form").innerHTML = h;
-    $("#op-form").querySelectorAll("[data-mic]").forEach(b => Voice.attachMic(b, document.getElementById(b.dataset.mic)));
-    $("#op-form").addEventListener("input", saveDraft);
-    loadDraft();
-  }
-  const KEY = "case-coach-onepager";
-  function saveDraft() { try { const o = {}; $("#op-form").querySelectorAll("textarea,select").forEach(e => o[e.id] = e.value); localStorage.setItem(KEY, JSON.stringify(o)); } catch {} }
-  function loadDraft() { try { const o = JSON.parse(localStorage.getItem(KEY) || "{}"); Object.entries(o).forEach(([k, v]) => { const e = document.getElementById(k); if (e) e.value = v; }); } catch {} }
-  const val = id => (document.getElementById("op-" + id)?.value || "").trim();
-  $("#op-build").onclick = () => {
-    const miss = "(missing)";
-    const problem = [val("who"), val("where"), val("why"), val("howmuch")].some(Boolean)
-      ? `${val("who") || miss} — at ${val("where") || miss} — because ${val("why") || miss}, costing ${val("howmuch") || miss}.` : miss;
-    const options = [0, 1, 2].map(i => Object.fromEntries(OPT_FIELDS.map(([k]) => [k, val(`o${i}-${k}`) || "—"])));
-    const sel = +$("#op-pick").value;
-    lastSlide = { title: (options[sel].name !== "—" ? options[sel].name : "Recommendation") + ": recommended path", subtitle: [val("company"), val("audience") && "For: " + val("audience")].filter(Boolean).join(" · "), problem, options, selected: sel, decision: val("decision") || miss, hypothesis: val("hypothesis") || miss, metrics: lines(val("metrics")).length ? lines(val("metrics")) : [miss], guardrails: lines(val("guardrails")).length ? lines(val("guardrails")) : [miss], footer: "Built from your inputs only. Evidence: " + (val("evidence") || "not provided") };
-    $("#s-summary").innerHTML = ""; $("#s-toggle-wrap").hidden = true; $("#s-model").checked = false; slideFrom = "onepager";
-    drawSlide(); location.hash = "slide";
+  /* ---------- one-pager hook (builder lives in onepager.js) ---------- */
+  window.App = {
+    showSlide(d) {
+      lastSlide = d; lastModel = null;
+      $("#s-summary").innerHTML = ""; $("#s-toggle-wrap").hidden = true; $("#s-model").checked = false; slideFrom = "onepager";
+      drawSlide(); location.hash = "slide";
+    }
   };
 
   /* ---------- boot ---------- */
-  renderOnePager();
   loadCatalog().then(route);
 })();
